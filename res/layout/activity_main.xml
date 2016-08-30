@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ 	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/title_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="车辆信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+ 	 <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/devide_line" />
+    	<RelativeLayout
+            android:id="@+id/car1"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="50dp" >
+            <ImageView
+                android:id="@+id/car_img1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/a" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/car_img1"
+                android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆名称:233-A" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="始末车站:李家沱大桥北~土桥" />
+            </LinearLayout>
+        </RelativeLayout>
+ 	 	<View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+ 	 	<RelativeLayout
+            android:id="@+id/car2"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="50dp" >
+            <ImageView
+                android:id="@+id/car_img2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/b" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/car_img2"
+                android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆名称:233-B" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="始末车站:李家沱大桥北~土桥" />
+            </LinearLayout>
+        </RelativeLayout>
+ 	 	<View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+ 	 	<RelativeLayout
+            android:id="@+id/car3"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="50dp" >
+            <ImageView
+                android:id="@+id/car_img3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/c" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/car_img3"
+                android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆名称:841" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="始末车站:李家沱大桥南~土桥" />
+            </LinearLayout>
+        </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
